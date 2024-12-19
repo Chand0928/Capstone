@@ -48,6 +48,8 @@ body{
 }
 #image1{
     background-color: #E7EBF4;
+    width:100vw;
+    margin: 0 auto;
 }
 
 #gallery {
@@ -208,4 +210,171 @@ submit{
 .contact-section button:hover {
     background-color: #c27b49;
 }
+
+
+
+@media screen and (max-width: 1024px) {
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    font-size: 24px;
+  }
+
+  .left {
+    font-size: 36px;
+  }
+
+  #main-container h1 {
+    font-size: 90px;
+  }
+  #image1 .img1 {
+    width: 80%; 
+    margin: 0 auto;  
+  }
+
+  #gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-row {
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .form-group,
+  .form-area {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  #end {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #end .left {
+    font-size: 24px;
+  }
+
+  #end .right {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar a {
+    font-size: 22px;
+  }
+
+  .left {
+    font-size: 30px;
+  }
+
+  #main-container h1 {
+    font-size: 80px;
+  }
+
+  #image1 .img1 {
+    width: 90%;  
+    margin: 0 auto; 
+  }
+
+
+  #gallery {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  .form-row {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .form-group,
+  .form-area {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  #end .left {
+    font-size: 20px;
+  }
+
+  #end .right {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .navbar a {
+    font-size: 20px;
+    margin: 8px 0;
+  }
+
+  .left {
+    font-size: 24px;
+  }
+
+  #main-container h1 {
+    font-size: 60px;
+  }
+
+  #image1 .img1 {
+    width: 100%; 
+    height: auto; 
+    margin: 0 auto;
+  }
+
+
+  #gallery {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  .form-row {
+    width: 90%;
+    margin-left: 5%;
+    flex-direction: column;
+  }
+
+  .form-group,
+  .form-area {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  submit {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  #end {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #end .left {
+    font-size: 18px;
+  }
+
+  #end .right {
+    font-size: 14px;
+  }
+}
